@@ -22,8 +22,17 @@ log "running dns_cache recipe"
 include_recipe "dns_cache::default"
 
 sys_firewall "53" do
-  protocol "both"
+  protocol "udp"
   action :update
+end
+
+sys_firewall "53" do
+  protocol "tcp"
+  action :update
+end
+
+right_link_tag "dns_cache:server=true" do
+  action :publish
 end
 
 rightscale_marker :end
