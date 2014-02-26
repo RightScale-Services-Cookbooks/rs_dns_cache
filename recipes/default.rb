@@ -23,7 +23,7 @@ include_recipe "dns_cache::default"
 
 sys_firewall "53" do
   protocol "both"
-  action :enable
+  action :update
 end
 
 rightscale_marker :end
