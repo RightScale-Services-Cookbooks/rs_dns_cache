@@ -9,5 +9,7 @@ version          '0.1.0'
 depends "rightscale"
 depends "sys_firewall"
 depends "dns_cache"
+depends "resolver"
 
 recipe "rs_dns_cache::default", "RightScale DNS Cache"
+recipe "rs_dns_cache::client", "sets up the resolv.conf"
