@@ -15,6 +15,8 @@ if node["server_collection"]["redis_master"]
   end
 end
 
+log "including recipe resolver::default"
+
 include_recipe "resolver::default"
 
 rightscale_marker :end
