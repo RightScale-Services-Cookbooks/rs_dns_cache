@@ -4,8 +4,9 @@ results = rightscale_server_collection "dns_cache" do
   tags ["dns_cache:server=true"]
   mandatory_tags ["server:private_ip_0=*"]
   empty_ok false
-  action :load
+  action :nothing
 end
+results.run_action(:load)
 
 if node["server_collection"]["dns_cache"]
   log "Server Collection Found"
