@@ -1,9 +1,5 @@
 rightscale_marker :begin
 
-class Chef::Recipe
-  include RightScale::ServicesTools
-end
-
 results = rightscale_server_collection "dns_cache" do
   tags ["dns_cache:server=true"]
   secondary_tags ["server:private_ip_0=*"]
