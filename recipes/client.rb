@@ -4,7 +4,7 @@ results = rightscale_server_collection "dns_cache" do
   tags ["dns_cache:server=true"]
   mandatory_tags ["server:private_ip_0=*"]
   empty_ok false
-  action :nothing
+  action :load
 end
 
 results.run_action(:load)
