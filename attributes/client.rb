@@ -8,4 +8,5 @@ when "google"
   default[:resolver][:nameserver]<<"169.254.169.254"
 end
 
+Chef::Log.info "Search: #{node[:resolver][:search]}"
 Chef::Log.info "Name Server Array #{node[:resolver][:nameserver].join(',').to_s}"
