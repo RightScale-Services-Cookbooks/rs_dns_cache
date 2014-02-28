@@ -1,5 +1,7 @@
+default[:resolver][:nameserver]=[]
 case node[:cloud][:provider]
 when "ec2"
+  Chef::Log.info "EC2"
   default[:resolver][:search]+=" ec2.internal us-west-2.compute.internal"
   default[:resolver][:nameserver]<<"172.16.0.23"
 when "google"
