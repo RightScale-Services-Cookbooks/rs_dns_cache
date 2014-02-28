@@ -7,3 +7,5 @@ when "google"
   default[:resolver][:search]+=" google.internal"
   default[:resolver][:nameserver]<<"169.254.169.254"
 end
+
+Chef::Log.info "Name Server Array #{node[:resolver][:nameserver].join(',').to_s}"

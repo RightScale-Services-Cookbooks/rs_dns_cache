@@ -17,6 +17,7 @@ else
   log "no server collection found"
 end
 
+log "NameServers: #{node[:resolver][:nameserver].join(',').to_s}"}"
 log "including recipe resolver::default"
 
 include_recipe "resolver::default"
