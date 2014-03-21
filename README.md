@@ -1,4 +1,4 @@
-rs_dns_cache Cookbook
+rsc_dns_cache Cookbook
 =====================
 TODO: Enter the cookbook description here.
 
