@@ -1,10 +1,10 @@
-name             'rs_dns_cache'
+name             'rsc_dns_cache'
 maintainer       'RightScale Inc'
 maintainer_email 'premium@rightscale.com'
 license          'Apache 2.0'
 description      'Installs/Configures rs_dns_cache'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.0'
+version          '0.1.1'
 
 depends "rightscale"
 depends "sys_firewall"
