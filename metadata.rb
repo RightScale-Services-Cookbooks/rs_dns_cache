@@ -9,8 +9,8 @@ version          '0.2.1'
 depends "dns_cache"
 depends "resolver"
 
-recipe "rs_dns_cache::default", "RightScale DNS Cache"
-recipe "rs_dns_cache::client", "sets up the resolv.conf"
+recipe "rsc_dns_cache::default", "RightScale DNS Cache"
+recipe "rsc_dns_cache::client", "sets up the resolv.conf"
 
 
 attribute "resolver",
